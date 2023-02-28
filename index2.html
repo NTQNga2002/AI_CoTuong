@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script src="/cdn-cgi/apps/head/btskv4UxB5kACRIO3BnCJ00RivE.js"></script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,s=[],r=[],o=!0,a=function(e,i,n,s,r,o,a){var l=this;this.name=e,this.funcName=i,this.parameters=null===n?null:n instanceof Array?n:[n],this.isBlock=s,this.blockedBy=r,this.deleteWhenComplete=o,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.isTimeDelay=!1,this.process=function(){u("... func = "+e),l.isInitialized=!0,l.isComplete=!0,u("... func.apply: "+e);var i=l.funcName.split("."),n=null;i.length>3||(n=3===i.length?window[i[0]][i[1]][i[2]]:2===i.length?window[i[0]][i[1]]:window[l.funcName]),null!=n&&n.apply(null,this.parameters),!0===l.deleteWhenComplete&&delete t[e],!0===l.isBlock&&(u("----- F'D: "+l.name),f())}},l=function(e,i,t,n,s,r,o){var a=this;this.name=e,this.path=i,this.async=s,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=o,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)?window.__ezScriptHost+e:e},this.process=function(){a.isInitialized=!0,u("... file = "+e);var i=document.createElement("script");i.src=this.getSrc(this.path),!0===s?i.async=!0:!0===r&&(i.defer=!0),i.onerror=function(){u("----- ERR'D: "+a.name),a.isError=!0,!0===a.isBlock&&f()},i.onreadystatechange=i.onload=function(){var e=i.readyState;u("----- F'D: "+a.name),e&&!/loaded|complete/.test(e)||(a.isComplete=!0,!0===a.isBlock&&f())},document.getElementsByTagName("head")[0].appendChild(i)}},c=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function d(e){!0!==h(e)&&0!=o&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return u(e.name+" blocked = TIME DELAY!"),!0;if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var s=e.blockedBy[i];if(!1===t.hasOwnProperty(s))return u(e.name+" blocked = "+s),!0;if(!0===e.proceedIfError&&!0===t[s].isError)return!1;if(!1===t[s].isComplete)return u(e.name+" blocked = "+s),!0}return!1}function u(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function f(){++e>200||(u("let's go"),m(s),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?u(t.name+": error"):!0===t.isComplete?u(t.name+": complete already"):!0===t.isInitialized&&u(t.name+": initialized already"):t.process()}}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,u("TDELAY -----"),f()}),5e3)}),!1),{addFile:function(e,i,n,o,a,c,h,u){var f=new l(e,i,n,o,a,c,h);!0===u?s[e]=f:r[e]=f,t[e]=f,d(f)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,u(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,d(n)},addFunc:function(e,n,o,l,c,h,u,f,m){!0===h&&(e=e+"_"+i++);var p=new a(e,n,o,l,c,u,f);!0===m?s[e]=p:r[e]=p,t[e]=p,d(p)},addDelayFunc:function(e,i,n){var s=new a(e,i,n,!1,[],!0,!0);s.isTimeDelay=!0,u(e+" ...  FUNCTION! TDELAY"),r[e]=s,t[e]=s,d(s)},items:t,processAll:f,setallowLoad:function(e){o=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?u(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new c(e,!0);u("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("/detroitchicago/grapefruit.gif")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="xiangqiboard.css" />
+    <title>Cờ tướng online</title>
+    <script src="/cdn-cgi/apps/head/btskv4UxB5kACRIO3BnCJ00RivE.js"></script><script defer="defer" async="async" src="https://www.googleoptimize.com/optimize.js?id=OPT-52RT2BV" type="e11606a2a81bee0389656eca-text/javascript"></script>
+    <title>Xây dựng chương trình AI game cờ tướng</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/xcode.min.css" rel="stylesheet" type="text/css" />
+    
+    <style>
+          .highlight {
+      box-shadow: inset 0 0 2px 2px yellow;
+    }
+    </style>
+    
+    <script type="text/javascript">var ezouid = "1";</script><base href="https://www.phamduytung.com/games/china_chess/"> <script type='text/javascript'>
+    var ezoTemplate = 'old_site_noads';
+    if(typeof ezouid == 'undefined')
+    {
+        var ezouid = 'none';
+    }
+    var ezoFormfactor = '1';
+    var ezo_elements_to_check = Array();
+    </script> 
+    <script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = {"ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"Hanoi","country":"VN","days_since_last_visit":-1,"domain_id":325531,"engaged_time_visit":10,"ezcache_level":2,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"1675151983314","last_pageview_id":"bfad4e38-ba06-4a18-4222-6a3cde0edef7","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":3,"page_view_id":"9d86e47d-eca1-476b-71d3-d1a58c0c673e","position_selection_id":0,"postal_code":"","pv_event_count":0,"response_size_orig":18523,"response_time_orig":10,"serverid":"13.229.227.189:8838","state":"HN","t_epoch":1675152073,"template_id":120,"time_on_site_visit":106,"url":"https://www.phamduytung.com/games/china_chess/","user_id":0,"weather_precipitation":0,"weather_summary":"","weather_temperature":0,"word_count":18,"worst_bad_word_level":0};var _ezExtraQueries = "&ez_orig=1";</script>
+    <script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+   
+    __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["9d86e47d-eca1-476b-71d3-d1a58c0c673e", "false"], false, ['/detroitchicago/boise.js'], true, false, false, false);
+    </script>
+    <body style="padding-top: 25px;background: url(https://zigavn.com/res/bg_sharefb.jpg);text-align: center;">
+    <main id="main" class="site-main main">
+    <section class="hero">
+    
+    <div class="container">
+    <div id="myBoard" style="width: 50%;float: left; "></div>
+    </div>
+    
+    <div  class="btn-start_btn-clear">
+      <!-- // Thêm button -->
+      <button id="startBtn" 
+      style="color: rgb(200, 220, 20);background: brown;
+      width: 100px; height: 50px; margin-bottom: 10px;">Start</button>
+      <br>
+      <button id="clearBtn"
+      style="color: rgb(200, 220, 20);background: brown;
+      width: 100px; height: 50px;">Clear Board</button>
+    </div>
+    <style>
+      .btn-start_btn-clear{
+        padding-top: 300px;
+        padding-left: 100px;
+      }
+    </style>
+
+    </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="xiangqiboard.js"></script>
+    <script src="https://cotuong.r.worldssl.net/js/xiangqi.js?v=33"></script>
+    <script>
+          // const config = {
+          //     boardTheme: 'img/Xiangqi_board.svg',
+          //     pieceTheme: 'img/{piece}.svg',
+          //     orientation: 'white',
+          //     position: 'start',
+          //     showNotation: true
+          // }
+      
+          // Xiangqiboard('#myBoard', config)
+    
+          let board = null;
+    let game = new Xiangqi();
+    let $status = $('#status');
+    let $fen = $('#fen');
+    let $pgn = $('#pgn');
+    
+    function removeGreySquares () {
+      $('#myBoard .square-2b8ce').removeClass('highlight');
+    }
+    
+    function greySquare (square) {
+      let $square = $('#myBoard .square-' + square);
+    
+      $square.addClass('highlight');
+    }
+    
+    function onDragStart (source, piece, position, orientation) {
+      // do not pick up pieces if the game is over
+      if (game.game_over()) return false;
+    
+      if (piece.search(/^b/) !== -1) return false;
+      // // only pick up pieces for the side to move
+      // if ((game.turn() === 'r' && piece.search(/^b/) !== -1) ||
+      //     (game.turn() === 'b' && piece.search(/^r/) !== -1)) {
+      //   return false;
+      // }
+    }
+    
+    
+    function minimaxRoot(depth, game, isMaximisingPlayer) {
+      var newGameMoves = game.moves();
+      var bestMove = -9999;
+      var bestMoveFound;
+    
+      for(var i = 0; i < newGameMoves.length; i++) {
+        var newGameMove = newGameMoves[i]
+        game.move(newGameMove);
+        var value = minimax(depth - 1, game, -INFINITY, INFINITY, !isMaximisingPlayer);
+        game.undo();
+        if(value >= bestMove) {
+          bestMove = value;
+          bestMoveFound = newGameMove;
+        }
+      }
+      return bestMoveFound;
+    }
+    
+    function minimax(depth, game, alpha, beta, isMaximisingPlayer) {
+    
+      if (depth === 0) {
+        return -evaluateBoard(game.board());
+      }
+    
+      var newGameMoves = game.moves();
+    
+      if (isMaximisingPlayer) {
+        var bestMove = -9999;
+        for (var i = 0; i < newGameMoves.length; i++) {
+          game.move(newGameMoves[i]);
+          bestMove = Math.max(bestMove, minimax(depth - 1, game, alpha, beta, !isMaximisingPlayer));
+          game.undo();
+          alpha = Math.max(alpha, bestMove);
+          if (beta <= alpha) {
+            return bestMove;
+          }
+        }
+        return bestMove;
+      } else {
+        var bestMove = 9999;
+        for (var i = 0; i < newGameMoves.length; i++) {
+          game.move(newGameMoves[i]);
+          bestMove = Math.min(bestMove, minimax(depth - 1, game, alpha, beta, !isMaximisingPlayer));
+          game.undo();
+          beta = Math.min(beta, bestMove);
+          if (beta <= alpha) {
+            return bestMove;
+          }
+        }
+        return bestMove;
+      }
+    }
+    
+    function evaluateBoard(board) {
+      var totalEvaluation = 0;
+      for (var i = 0; i < 10; i++) {
+        for (var j = 0; j < 9; j++) {
+          totalEvaluation = totalEvaluation + getPieceValue(board[i][j], i ,j);
+        }
+      }
+      return totalEvaluation;
+    }
+    
+    function reverseArray(array) {
+      return array.slice().reverse();
+    }
+    
+    const INFINITY = 50000;
+    
+    const pEvalRed =
+    [
+    [ 0,   3,   6,   9,  12,   9,   6,   3,   0],
+            [18,  36,  56,  80, 120,  80,  56,  36,  18],
+            [14,  26,  42,  60,  80,  60,  42,  26,  14],
+            [10,  20,  30,  34,  40,  34,  30,  20,  10],
+            [ 6,  12,  18,  18,  20,  18,  18,  12,   6],
+            [ 2,   0,   8,   0,   8,   0,   8,   0,   2],
+            [ 0,   0,  -2,   0,   4,   0,  -2,   0,   0],
+            [ 0,   0,   0,   0,   0,   0,   0,   0,   0],
+            [ 0,   0,   0,   0,   0,   0,   0,   0,   0],
+            [ 0,   0,   0,   0,   0,   0,   0,   0,   0],
+    ];
+    
+    const pEvalBlack = reverseArray(pEvalRed);
+    
+    const rEvalRed =
+    [
+    [ 14,  14,  12,  18,  16,  18,  12,  14,  14], 
+            [ 16,  20,  18,  24,  26,  24,  18,  20,  16], 
+            [ 12,  12,  12,  18,  18,  18,  12,  12,  12], 
+            [ 12,  18,  16,  22,  22,  22,  16,  18,  12], 
+            [ 12,  14,  12,  18,  18,  18,  12,  14,  12], 
+            [ 12,  16,  14,  20,  20,  20,  14,  16,  12], 
+            [  6,  10,   8,  14,  14,  14,   8,  10,   6], 
+            [  4,   8,   6,  14,  12,  14,   6,   8,   4], 
+            [  8,   4,   8,  16,   8,  16,   8,   4,   8], 
+            [ -2,  10,   6,  14,  12,  14,   6,  10,  -2], 
+    
+    ];
+    
+    const rEvalBlack = reverseArray(rEvalRed);
+    
+    const nEvalRed =
+    [
+    [ 4,   8,  16,  12,   4,  12,  16,   8,   4], 
+            [ 4,  10,  28,  16,   8,  16,  28,  10,   4],  
+            [12,  14,  16,  20,  18,  20,  16,  14,  12],  
+            [ 8,  24,  18,  24,  20,  24,  18,  24,   8],  
+            [ 6,  16,  14,  18,  16,  18,  14,  16,   6],  
+            [ 4,  12,  16,  14,  12,  14,  16,  12,   4],  
+            [ 2,   6,   8,   6,  10,   6,   8,   6,   2],  
+            [ 4,   2,   8,   8,   4,   8,   8,   2,   4],  
+            [ 0,   2,   4,   4,  -2,   4,   4,   2,   0],  
+            [ 0,  -4,   0,   0,   0,   0,   0,  -4,   0], 
+    
+    ];
+    
+    const nEvalBlack = reverseArray(nEvalRed);
+    
+    const cEvalRed =
+    [
+    [ 6,   4,   0, -10, -12, -10,   0,   4,   6], 
+            [ 2,   2,   0,  -4, -14,  -4,   0,   2,   2], 
+            [ 2,   2,   0, -10,  -8, -10,   0,   2,   2], 
+            [ 0,   0,  -2,   4,  10,   4,  -2,   0,   0], 
+            [ 0,   0,   0,   2,   8,   2,   0,   0,   0], 
+            [-2,   0,   4,   2,   6,   2,   4,   0,  -2], 
+            [ 0,   0,   0,   2,   4,   2,   0,   0,   0], 
+            [ 4,   0,   8,   6,  10,   6,   8,   0,   4], 
+            [ 0,   2,   4,   6,   6,   6,   4,   2,   0], 
+            [ 0,   0,   2,   6,   6,   6,   2,   0,   0], 
+    
+    ];
+    
+    const cEvalBlack = reverseArray(cEvalRed);
+    
+    const bEvalRed =
+    [
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    
+    ];
+    
+    const bEvalBlack = reverseArray(bEvalRed);
+    
+    const aEvalRed =
+    [
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    
+    ];
+    
+    const aEvalBlack = reverseArray(aEvalRed);
+    
+     kEvalRed =
+    [
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  2.0,  0.0,  0.0,  0.0, 0.0],
+    [0.0,  0.0,  0.0,  0.0,  4.0,  0.0,  0.0,  0.0, 0.0],
+    
+    ];
+    
+    const kEvalBlack = reverseArray(kEvalRed);
+    
+    function getPieceValue(piece, x, y) {
+      if (piece === null) {
+        return 0;
+      }
+      var getAbsoluteValue = function (piece, isRed, x ,y) {
+        if (piece.type === 'p') { //chốt
+          return 30 + ( isRed ? pEvalRed[x][y] : pEvalBlack[x][y] );
+        } else if (piece.type === 'r') { //Xe
+          return 600 +( isRed ? rEvalRed[x][y] : rEvalBlack[x][y] );
+        } else if (piece.type === 'c') { //pháo
+          return 285 +( isRed ? cEvalRed[x][y] : cEvalBlack[x][y] );
+        } else if (piece.type === 'n') { // mã
+          return 270 +( isRed ? nEvalRed[x][y] : nEvalBlack[x][y] );
+        } else if (piece.type === 'b') { // tượng
+          return 120 +( isRed ? bEvalRed[x][y] : bEvalBlack[x][y] );
+        } else if (piece.type === 'a') { // sỹ
+          return 120 +( isRed ? aEvalRed[x][y] : aEvalBlack[x][y] );
+        } else if (piece.type === 'k') { // tướng
+          return 6000 +( isRed ? kEvalRed[x][y] : kEvalBlack[x][y] );
+        }
+        throw "Unknown piece type: " + piece.type;
+      };
+    
+      var absoluteValue = getAbsoluteValue(piece, piece.color === 'r', x ,y);
+      return piece.color === 'r' ? absoluteValue : -absoluteValue;
+    }
+    
+    function makeBestMove() {
+      var bestMove = getBestMoveMaxi(game);
+      game.move(bestMove);
+      board.position(game.fen());
+     // nuocCo.play();
+      updateStatus();
+    }
+    
+    function getBestMoveMaxi(game) {
+      updateStatus();
+      var depth = 4;
+      var bestMove = minimaxRoot(depth, game, true);
+      return bestMove;
+    }
+    
+    function getBestMove(game) {
+    
+    var newGameMoves = game.moves();
+    var bestMove = null;
+    // set đại một số âm vô hạn
+    var bestValue = -9999;
+    
+    for (var i = 0; i < newGameMoves.length; i++) {
+        var newGameMove = newGameMoves[i];
+        game.move(newGameMove);
+    
+        var boardValue = -evaluateBoard(game.board())
+        game.undo();
+        if (boardValue > bestValue) {
+            bestValue = boardValue;
+            bestMove = newGameMove
+        }
+    }
+    
+    return bestMove;
+    
+    };
+    
+    
+    
+    function makeRandomMove () {
+      let possibleMoves = game.moves();
+    
+      // game over
+      if (possibleMoves.length === 0) return; // Không còn nước nào có thể đi, end game
+    
+      let randomIdx = Math.floor(Math.random() * possibleMoves.length); // bốc đại 1 nước đi trong danh sách các bước có thể đi
+      game.move(possibleMoves[randomIdx]);
+      board.position(game.fen());
+    }
+    
+    function onDrop (source, target) {
+      removeGreySquares();
+    
+      // see if the move is legal
+      let move = game.move({
+        from: source,
+        to: target,
+        promotion: 'q' // NOTE: always promote to a queen for example simplicity
+      });
+    
+      // illegal move
+      if (move === null) return 'snapback';
+    
+     // updateStatus();
+    
+      // make random legal move for black
+      // window.setTimeout(makeRandomMove, 250);
+      window.setTimeout(makeBestMove, 250);
+    }
+    
+    
+    function onMouseoverSquare (square, piece) {
+      // get list of possible moves for this square
+      let moves = game.moves({
+        square: square,
+        verbose: true
+      });
+    
+      // exit if there are no moves available for this square
+      if (moves.length === 0) return;
+    
+      // highlight the square they moused over
+      greySquare(square);
+    
+      // highlight the possible squares for this piece
+      for (let i = 0; i < moves.length; i++) {
+        greySquare(moves[i].to);
+      }
+    }
+    
+    function onMouseoutSquare (square, piece) {
+      removeGreySquares();
+    }
+    
+    
+    // update the board position after the piece snap
+    // for castling, en passant, pawn promotion
+    function onSnapEnd () {
+      board.position(game.fen());
+    }
+    
+    function updateStatus () {
+      let status = '';
+    
+      let moveColor = 'Red';
+      if (game.turn() === 'b') {
+        moveColor = 'Black';
+      }
+    
+      // checkmate?
+      if (game.in_checkmate()) {
+        status = 'Game over, ' + moveColor + ' is in checkmate.';
+      }
+    
+      // draw?
+      else if (game.in_draw()) {
+        status = 'Game over, drawn position';
+      }
+    
+      // game still on
+      else {
+        status = moveColor + ' to move';
+    
+        // check?
+        if (game.in_check()) {
+          status += ', ' + moveColor + ' is in check';
+        }
+      }
+    
+      $status.html(status);
+      $fen.html(game.fen());
+      $pgn.html(game.pgn());
+    }
+    
+    let config = {
+      draggable: true,
+      position: 'start',
+      onDragStart: onDragStart,
+      onDrop: onDrop,
+      onMouseoutSquare: onMouseoutSquare,
+      onMouseoverSquare: onMouseoverSquare,
+      onSnapEnd: onSnapEnd
+    };
+    board = Xiangqiboard('myBoard', config);
+
+    $('#startBtn').on('click', board.start);
+    $('#clearBtn').on('click', board.clear);
+    $(window).resize(board.resize);
+    
+    updateStatus();
+      </script>
+    <script type='text/javascript' style='display:none;' async>
+    </script>
+    <script type="text/javascript" data-cfasync="false"></script>
+</body>
+</html>
